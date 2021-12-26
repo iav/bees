@@ -1,0 +1,17 @@
+Source: bees
+Section: devel
+Priority: extra
+Maintainer: Zygo Blaxell <bees@furryterror.org>
+Build-Depends: devscripts
+Standards-Version: 0.7
+Homepage: https://github.com/Zygo/bees
+
+Package: bees
+Architecture: any
+Depends: btrfs-progs, markdown,
+	 ${misc:Depends}, ${shlibs:Depends}
+Description: Best-Effort Extent-Same, a btrfs deduplication agent
+ bees is a block-oriented userspace deduplication agent designed
+ for large btrfs filesystems. It is an offline dedupe combined with
+ an incremental data scan capability to minimize time data spends
+ on disk from write to dedupe.

@@ -74,3 +74,6 @@ help: ## Show help
 
 bees: reallyall
 fly: install
+
+deb: all
+	debuild -us -uc -nc -b -i -I
